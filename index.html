@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jonathan Drechsel — PhD student at the University of Passau working on language models, interpretability and feature learning." />
+  <meta name="author" content="Jonathan Drechsel" />
+  <title>Jonathan Drechsel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">Jonathan Drechsel</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#artifacts">Code &amp; Artifacts</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="cv.html">CV</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div>
+        <p class="hero__hi">Hi, I'm</p>
+        <h1>Jonathan Drechsel</h1>
+        <p class="hero__lead">PhD student at the <a href="https://www.fim.uni-passau.de/ai-engineering" target="_blank" rel="noopener">Chair of AI Engineering</a>, University of Passau. I work on language models, interpretability, feature learning and bias.</p>
+        <div class="btns">
+          <a class="btn btn--primary" href="cv.html">CV</a>
+          <a class="btn btn--ghost" href="mailto:jonathan.drechsel@uni-passau.de">Say hello</a>
+          <a class="btn btn--ghost" href="#publications">Publications</a>
+        </div>
+      </div>
+      <img class="hero__photo" src="assets/profile.jpg" alt="Portrait of Jonathan Drechsel" onerror="this.style.visibility='hidden'" />
+    </section>
+
+    <section id="about" class="section">
+      <div class="section__label">About</div>
+      <h2>A bit about me</h2>
+      <p>I am a PhD student in Computer Science at the University of Passau, supervised by <a href="https://scholar.google.com/citations?user=Fac_e58AAAAJ" target="_blank" rel="noopener">Prof. Steffen Herbold</a>. My research focuses on understanding and shaping what language models learn. I develop <strong>GRADIEND</strong>, a gradient-based method that learns interpretable feature directions inside neural networks and uses them to detect and change model behaviour, for example to reduce social biases. I also work on mathematical NLP, where I developed <strong>MAMUT</strong>, a framework for generating specialized math datasets for training language models.</p>
+      <p>Before my PhD I studied Computer Science and Mathematics at TU Dresden. I teach <em>AI Engineering</em> and <em>Deep Learning for NLP</em>.</p>
+      <p><strong>Interests:</strong> Language Models · Explainable AI · Mechanistic Interpretability · Bias &amp; Fairness · Math NLP</p>
+    </section>
+
+    <section id="news" class="section">
+      <div class="section__label">News</div>
+      <h2>Recent updates</h2>
+      <ul class="news">
+        <li><time>2026</time><span>🎉 <em>The GRADIEND Python Package</em> accepted to the <strong>EMNLP 2026 System Demonstrations</strong>.</span></li>
+        <li><time>Sep 2026</time><span>New preprint: <a href="https://arxiv.org/abs/2609.32355" target="_blank" rel="noopener">Gradients for Interventions and Activations for Detection</a> (ACTIEND / AGIEND).</span></li>
+        <li><time>2026</time><span>Serving as reviewer for <strong>NeurIPS 2026</strong> and the <strong>EMNLP 2026 System Demonstrations</strong>.</span></li>
+        <li><time>2026</time><span>🎤 <em>Understanding or Memorizing? German Definite Articles in Language Models</em> accepted to <strong>ACL 2026</strong> as an <strong>oral presentation</strong>. I'm also student volunteer at ACL 2026.</span></li>
+        <li><time>2026</time><span>🎉 <em>GRADIEND</em> accepted to <strong>ICLR 2026</strong>.</span></li>
+        <li><time>2025</time><span><em>MAMUT</em> published in <strong>TMLR</strong>.</span></li>
+        <li><time>2024</time><span>Started my PhD at the University of Passau.</span></li>
+      </ul>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section__label">Publications</div>
+      <h2>My work</h2>
+
+      <article class="pub">
+        <span class="venue">EMNLP 2026</span><span class="venue">System Demonstrations</span>
+        <h3 class="pub__title">The GRADIEND Python Package: An End-to-End System for Gradient-Based Feature Learning</h3>
+        <p class="pub__authors"><strong>Jonathan Drechsel</strong>, Steffen Herbold</p>
+        <div class="links"><a href="https://arxiv.org/abs/2602.23993" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/aieng-lab/gradiend" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="pub">
+        <span class="venue venue--oral">ACL 2026 · Oral</span>
+        <h3 class="pub__title">Understanding or Memorizing? A Case Study of German Definite Articles in Language Models</h3>
+        <p class="pub__authors"><strong>Jonathan Drechsel</strong>, Erisa Bytyqi, Steffen Herbold</p>
+        <div class="links"><a href="https://arxiv.org/abs/2601.09313" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/aieng-lab/gradiend-german-articles" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="pub">
+        <span class="venue">ICLR 2026</span>
+        <h3 class="pub__title">GRADIEND: Feature Learning within Neural Networks Exemplified through Biases</h3>
+        <p class="pub__authors"><strong>Jonathan Drechsel</strong>, Steffen Herbold</p>
+        <div class="links"><a href="https://arxiv.org/abs/2502.01406" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/aieng-lab/gradiend-bias" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/aieng-lab" target="_blank" rel="noopener">Models &amp; Data</a></div>
+      </article>
+
+      <article class="pub">
+        <span class="venue">TMLR 2025</span>
+        <h3 class="pub__title">MAMUT: A Novel Framework for Modifying Mathematical Formulas for the Generation of Specialized Datasets for Language Model Training</h3>
+        <p class="pub__authors"><strong>Jonathan Drechsel</strong>, Anja Reusch, Steffen Herbold</p>
+        <div class="links"><a href="https://arxiv.org/abs/2502.20855" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/aieng-lab/math-mutator" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="pub">
+        <span class="venue">SemEval 2023</span>
+        <h3 class="pub__title">Sabrina Spellman at SemEval-2023 Task 5: Discover the Shocking Truth Behind this Composite Approach to Clickbait Spoiling!</h3>
+        <p class="pub__authors">Simon Birkenheuer, <strong>Jonathan Drechsel</strong>, Paul Justen, Jimmy Pöhlmann, Julius Gonsior, Anja Reusch</p>
+      </article>
+
+      <article class="pub">
+        <span class="venue">ICDE Workshops 2022</span>
+        <h3 class="pub__title">Ingredient-based Forecast of Sold Dish Portions in Campus Canteen Kitchens</h3>
+        <p class="pub__authors">Lucas Woltmann, <strong>Jonathan Drechsel</strong>, Claudio Hartmann, Wolfgang Lehner</p>
+      </article>
+
+      <h3 class="sub">Preprints</h3>
+      <article class="pub">
+        <span class="venue">Preprint</span>
+        <h3 class="pub__title">Gradients for Interventions and Activations for Detection: Targeted Feature Learning in Language Models</h3>
+        <p class="pub__authors"><strong>Jonathan Drechsel</strong>, Steffen Herbold</p>
+        <div class="links"><a href="https://arxiv.org/abs/2609.32355" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/aieng-lab/iend-study" target="_blank" rel="noopener">Code</a></div>
+      </article>
+      <p><a href="https://scholar.google.com/citations?user=QU3A0L8AAAAJ" target="_blank" rel="noopener">Full list on Google Scholar →</a></p>
+    </section>
+
+    <section id="artifacts" class="section">
+      <div class="section__label">Code &amp; Artifacts</div>
+      <h2>Repositories, models &amp; datasets</h2>
+      <div class="grid">
+        <div class="card"><a href="https://github.com/aieng-lab/gradiend" target="_blank" rel="noopener"><strong>gradiend</strong></a><p>Python package for gradient-based feature learning (EMNLP 2026 Demo).</p></div>
+        <div class="card"><a href="https://github.com/aieng-lab/gradiend-bias" target="_blank" rel="noopener"><strong>gradiend-bias</strong></a><p>GRADIEND experiments on gender, race and religion bias (ICLR 2026).</p></div>
+        <div class="card"><a href="https://github.com/aieng-lab/gradiend-german-articles" target="_blank" rel="noopener"><strong>gradiend-german-articles</strong></a><p>Code for the German definite articles study (ACL 2026).</p></div>
+        <div class="card"><a href="https://github.com/aieng-lab/iend-study" target="_blank" rel="noopener"><strong>iend-study</strong></a><p>ACTIEND &amp; AGIEND: targeted feature learning in language models.</p></div>
+        <div class="card"><a href="https://github.com/aieng-lab/math-mutator" target="_blank" rel="noopener"><strong>math-mutator (MAMUT)</strong></a><p>Framework to generate specialized math datasets (TMLR 2025).</p></div>
+        <div class="card"><a href="https://huggingface.co/aieng-lab" target="_blank" rel="noopener"><strong>🤗 Hugging Face</strong></a><p>Debiased models and datasets such as <code>genter</code> and <code>namexact</code>.</p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section__label">Experience</div>
+      <h2>Where I work</h2>
+      <ul class="tl">
+        <li><span class="when">2024 – present</span><span class="what"><strong>Research Assistant</strong>, University of Passau<small>Language models, interpretability, feature learning, bias, math NLP. Teaching: AI Engineering, Deep Learning for NLP.</small></span></li>
+        <li><span class="when">2022 – 2024</span><span class="what"><strong>Working Student, Software Developer</strong>, Liofit GmbH</span></li>
+        <li><span class="when">2020 – 2022</span><span class="what"><strong>Working Student, Software Developer</strong>, Conimon GmbH</span></li>
+      </ul>
+      <h3 class="sub">Academic service &amp; awards</h3>
+      <ul class="tl">
+        <li><span class="when">2026</span><span class="what">Reviewer: NeurIPS 2026, EMNLP 2026 System Demonstrations</span></li>
+        <li><span class="when">2026</span><span class="what">Student Volunteer: ACL 2026</span></li>
+        <li><span class="when">2022 – 2023</span><span class="what">Deutschlandstipendium (Germany Scholarship)</span></li>
+      </ul>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section__label">Education</div>
+      <h2>Academic path</h2>
+      <ul class="tl">
+        <li><span class="when">2024 – present</span><span class="what"><strong>Ph.D. Computer Science</strong>, University of Passau</span></li>
+        <li><span class="when">2022 – 2023</span><span class="what"><strong>M.Sc. Computer Science</strong>, TU Dresden<small>Grade 1.1</small></span></li>
+        <li><span class="when">2021 – 2024</span><span class="what"><strong>M.Sc. Mathematics</strong>, TU Dresden<small>Grade 1.2</small></span></li>
+        <li><span class="when">2019 – 2021</span><span class="what"><strong>B.Sc. Computer Science</strong>, TU Dresden<small>Grade 1.6</small></span></li>
+        <li><span class="when">2017 – 2021</span><span class="what"><strong>B.Sc. Mathematics</strong>, TU Dresden<small>Grade 1.8</small></span></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__label">Contact</div>
+      <h2>Find me online</h2>
+      <ul class="chips">
+        <li><a href="mailto:jonathan.drechsel@uni-passau.de">✉ jonathan.drechsel@uni-passau.de</a></li>
+        <li><a href="https://scholar.google.com/citations?user=QU3A0L8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/jdrechsel13" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/aieng-lab" target="_blank" rel="noopener">AI Engineering Lab</a></li>
+        <li><a href="https://huggingface.co/aieng-lab" target="_blank" rel="noopener">Hugging Face</a></li>
+        <!-- TODO: add LinkedIn and ORCID once URLs are known -->
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Jonathan Drechsel</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

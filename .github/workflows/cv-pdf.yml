@@ -1,0 +1,29 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches: [main]
+    paths: [cv.html, styles.css]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render cv.html to cv.pdf (headless Chrome)
+        run: |
+          google-chrome --headless=new --no-sandbox --disable-gpu \
+            --no-pdf-header-footer --virtual-time-budget=5000 \
+            --print-to-pdf=cv.pdf "file://$PWD/cv.html"
+
+      - name: Commit updated PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add cv.pdf
+          git diff --cached --quiet || (git commit -m "chore: update cv.pdf [skip ci]" && git push)
