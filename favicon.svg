@@ -1,4 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#2b59c3"/>
-  <text x="32" y="43" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="30" fill="#fff" letter-spacing="-1">JD</text>
+  <rect width="64" height="64" rx="15" fill="#2563eb"/>
+  <!-- Merged J and D Monogram with shared vertical stem -->
+  <path d="M 28 14 
+           L 37 14 
+           C 49 14, 49 38, 37 38 
+           L 28 38 
+           M 28 14 
+           L 28 42 
+           C 28 50, 22 51, 18 51 
+           C 13 51, 10 47, 10 43" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
 </svg>

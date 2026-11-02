@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV – Jonathan Drechsel</title>
+  <title>Curriculum Vitae – Jonathan Drechsel</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
-<body>
+<body class="cv-body">
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">← Jonathan Drechsel</a>
@@ -18,40 +20,136 @@
   </header>
 
   <main class="cv">
-    <h1>Jonathan Drechsel</h1>
-    <p class="tagline">PhD Student, University of Passau, Germany</p>
-    <p class="tagline"><a href="mailto:jonathan.drechsel@uni-passau.de">jonathan.drechsel@uni-passau.de</a> · <a href="https://jdrechsel13.github.io">jdrechsel13.github.io</a> · <a href="https://github.com/jdrechsel13">github.com/jdrechsel13</a> · <a href="https://orcid.org/0009-0007-3383-2777">ORCID</a> · <a href="https://www.linkedin.com/in/jonathan-drechsel-561b48285">LinkedIn</a></p>
-    <div class="cv-actions"><a class="btn btn--primary" href="cv.pdf">Download PDF</a></div>
+    <div class="cv-header">
+      <h1>Jonathan Drechsel</h1>
+      <p class="cv-role">PhD Student in Computer Science · University of Passau, Germany</p>
+      <p class="cv-contact">
+        <a href="mailto:jonathan.drechsel@uni-passau.de">jonathan.drechsel@uni-passau.de</a> · 
+        <a href="https://jdrechsel13.github.io">jdrechsel13.github.io</a> · 
+        <a href="https://github.com/jdrechsel13">github.com/jdrechsel13</a> · 
+        <a href="https://scholar.google.com/citations?user=QU3A0L8AAAAJ">Google Scholar</a> · 
+        <a href="https://orcid.org/0009-0007-3383-2777">ORCID</a> · 
+        <a href="https://www.linkedin.com/in/jonathan-drechsel-561b48285">LinkedIn</a>
+      </p>
+    </div>
 
-    <h2>Education</h2>
-    <div class="item"><span class="when">2024 – present</span><span><strong>Ph.D. in Computer Science</strong>, University of Passau, Germany</span></div>
-    <div class="item"><span class="when">2022 – 2023</span><span><strong>M.Sc. Computer Science</strong>, Dresden University of Technology, Grade 1.1</span></div>
-    <div class="item"><span class="when">2021 – 2024</span><span><strong>M.Sc. Mathematics</strong>, Dresden University of Technology, Grade 1.2</span></div>
-    <div class="item"><span class="when">2019 – 2021</span><span><strong>B.Sc. Computer Science</strong>, Dresden University of Technology, Grade 1.6</span></div>
-    <div class="item"><span class="when">2017 – 2021</span><span><strong>B.Sc. Mathematics</strong>, Dresden University of Technology, Grade 1.8</span></div>
-    <p class="note">German grading scale: 1.0 is the best grade, 4.0 the lowest passing grade.</p>
+    <div class="cv-actions">
+      <a class="btn btn--primary" href="cv.pdf" download><svg class="icon"><use href="#i-file"/></svg>Download PDF</a>
+      <button type="button" class="btn btn--ghost" onclick="window.print()"><svg class="icon"><use href="#i-file"/></svg>Print</button>
+    </div>
 
-    <h2>Publications</h2>
-    <p class="publine"><strong>Drechsel, Jonathan</strong>; Herbold, Steffen (2026). The GRADIEND Python Package: An End-to-End System for Gradient-Based Feature Learning. <span class="venue">EMNLP 2026 System Demonstration</span></p>
-    <p class="publine"><strong>Drechsel, Jonathan</strong>; Bytyqi, Erisa; Herbold, Steffen (2026). Understanding or Memorizing? A Case Study of German Definite Articles in Language Models. <span class="venue venue--oral">ACL 2026 (Oral)</span></p>
-    <p class="publine"><strong>Drechsel, Jonathan</strong>; Herbold, Steffen (2026). GRADIEND: Feature Learning within Neural Networks Exemplified through Biases. <span class="venue">ICLR 2026</span></p>
-    <p class="publine"><strong>Drechsel, Jonathan</strong>; Reusch, Anja; Herbold, Steffen (2025). MAMUT: A Novel Framework for Modifying Mathematical Formulas for the Generation of Specialized Datasets for Language Model Training. <span class="venue">TMLR 2025</span></p>
-    <p class="publine">Birkenheuer, Simon; <strong>Drechsel, Jonathan</strong>; Justen, Paul; Pöhlmann, Jimmy; Gonsior, Julius; Reusch, Anja (2023). Sabrina Spellman at SemEval-2023 Task 5: Discover the Shocking Truth Behind this Composite Approach to Clickbait Spoiling! <span class="venue">SemEval 2023</span></p>
-    <p class="publine">Woltmann, Lucas; <strong>Drechsel, Jonathan</strong>; Hartmann, Claudio; Lehner, Wolfgang (2022). Ingredient-based Forecast of Sold Dish Portions in Campus Canteen Kitchens. <span class="venue">ICDE Workshops (ICDEW) 2022</span></p>
+    <section class="cv-sec">
+      <h2>Education</h2>
+      <div class="cv-row">
+        <span class="cv-date">2024 – present</span>
+        <div class="cv-content">
+          <strong>Ph.D. in Computer Science</strong>, University of Passau, Germany
+          <div class="cv-sub">Advisor: Prof. Dr. Steffen Herbold · Chair of AI Engineering</div>
+        </div>
+      </div>
+      <div class="cv-row">
+        <span class="cv-date">2022 – 2023</span>
+        <div class="cv-content">
+          <strong>M.Sc. in Computer Science</strong>, Dresden University of Technology
+          <span class="cv-grade">Grade: 1.1</span>
+        </div>
+      </div>
+      <div class="cv-row">
+        <span class="cv-date">2021 – 2024</span>
+        <div class="cv-content">
+          <strong>M.Sc. in Mathematics</strong>, Dresden University of Technology
+          <span class="cv-grade">Grade: 1.2</span>
+        </div>
+      </div>
+      <div class="cv-row">
+        <span class="cv-date">2019 – 2021</span>
+        <div class="cv-content">
+          <strong>B.Sc. in Computer Science</strong>, Dresden University of Technology
+          <span class="cv-grade">Grade: 1.6</span>
+        </div>
+      </div>
+      <div class="cv-row">
+        <span class="cv-date">2017 – 2021</span>
+        <div class="cv-content">
+          <strong>B.Sc. in Mathematics</strong>, Dresden University of Technology
+          <span class="cv-grade">Grade: 1.8</span>
+        </div>
+      </div>
+      <p class="cv-note">German grading scale (1.0 is the best possible grade).</p>
+    </section>
 
-    <h2>Work Experience</h2>
-    <div class="item"><span class="when">2024 – present</span><span><strong>Research Assistant</strong>, University of Passau<br />Research topics: language models, interpretability, targeted feature learning, math NLP<br />Teaching: assistant for multiple undergraduate and graduate courses</span></div>
-    <div class="item"><span class="when">2022 – 2024</span><span><strong>Working Student as Software Developer</strong>, Liofit GmbH</span></div>
-    <div class="item"><span class="when">2020 – 2022</span><span><strong>Working Student as Software Developer</strong>, Conimon GmbH</span></div>
+    <section class="cv-sec">
+      <h2>Publications</h2>
+      <div class="cv-pub">
+        <strong>Drechsel, Jonathan</strong> and Steffen Herbold (2026). &ldquo;The GRADIEND Python Package: An End-to-End System for Gradient-Based Feature Learning&rdquo;. In: <em>Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations (EMNLP 2026)</em>.
+      </div>
+      <div class="cv-pub">
+        <strong>Drechsel, Jonathan</strong>, Erisa Bytyqi, and Steffen Herbold (2026). &ldquo;Understanding or Memorizing? A Case Study of German Definite Articles in Language Models&rdquo;. In: <em>Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)</em>. <strong>(Oral Presentation)</strong>.
+      </div>
+      <div class="cv-pub">
+        <strong>Drechsel, Jonathan</strong> and Steffen Herbold (2026). &ldquo;GRADIEND: Feature Learning within Neural Networks Exemplified through Biases&rdquo;. In: <em>International Conference on Learning Representations (ICLR 2026)</em>.
+      </div>
+      <div class="cv-pub">
+        <strong>Drechsel, Jonathan</strong>, Anja Reusch, and Steffen Herbold (2025). &ldquo;MAMUT: A Novel Framework for Modifying Mathematical Formulas for the Generation of Specialized Datasets for Language Model Training&rdquo;. In: <em>Transactions on Machine Learning Research (TMLR)</em>.
+      </div>
+      <div class="cv-pub">
+        Simon Birkenheuer, <strong>Jonathan Drechsel</strong>, Paul Justen, Jimmy Pöhlmann, Julius Gonsior, and Anja Reusch (2023). &ldquo;Sabrina Spellman at SemEval-2023 Task 5: Discover the Shocking Truth Behind this Composite Approach to Clickbait Spoiling!&rdquo; In: <em>Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval 2023)</em>.
+      </div>
+      <div class="cv-pub">
+        Lucas Woltmann, <strong>Jonathan Drechsel</strong>, Claudio Hartmann, and Wolfgang Lehner (2022). &ldquo;Ingredient-based Forecast of Sold Dish Portions in Campus Canteen Kitchens&rdquo;. In: <em>2022 IEEE 38th International Conference on Data Engineering Workshops (ICDEW)</em>.
+      </div>
+    </section>
 
-    <h2>Skills</h2>
-    <div class="item"><span class="when">Programming</span><span>Python, Java (very good knowledge); C, C++ (good knowledge)</span></div>
-    <div class="item"><span class="when">ML</span><span>PyTorch, Transformers</span></div>
-    <div class="item"><span class="when">Languages</span><span>German (native), English (fluent), French (basic)</span></div>
+    <section class="cv-sec">
+      <h2>Research &amp; Work Experience</h2>
+      <div class="cv-row">
+        <span class="cv-date">2024 – present</span>
+        <div class="cv-content">
+          <strong>Research Assistant</strong>, University of Passau, Germany
+          <ul class="cv-bullets">
+            <li>Research on targeted feature learning, mechanistic interpretability, and math NLP</li>
+            <li>Teaching assistant for undergraduate and graduate computer science courses</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-row">
+        <span class="cv-date">2022 – 2024</span>
+        <div class="cv-content">
+          <strong>Working Student (Software Development)</strong>, Liofit GmbH
+        </div>
+      </div>
+      <div class="cv-row">
+        <span class="cv-date">2020 – 2022</span>
+        <div class="cv-content">
+          <strong>Working Student (Software Development)</strong>, Conimon GmbH
+        </div>
+      </div>
+    </section>
 
-    <h2>Awards</h2>
-    <div class="item"><span class="when">2022 – 2023</span><span>Deutschlandstipendium (Germany Scholarship)</span></div>
+    <section class="cv-sec">
+      <h2>Honors &amp; Scholarships</h2>
+      <div class="cv-row">
+        <span class="cv-date">2022 – 2023</span>
+        <div class="cv-content">
+          <strong>Deutschlandstipendium</strong> (Germany Scholarship)
+          <div class="cv-sub">National scholarship awarded for outstanding academic achievement</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-sec">
+      <h2>Technical Skills</h2>
+      <div class="cv-skills">
+        <div class="cv-skill-line"><strong>Programming:</strong> Python, Java (proficient); C, C++ (good knowledge)</div>
+        <div class="cv-skill-line"><strong>Machine Learning:</strong> PyTorch, Hugging Face Transformers, NumPy, SciPy</div>
+        <div class="cv-skill-line"><strong>Languages:</strong> German (native), English (fluent), French (basic)</div>
+      </div>
+    </section>
   </main>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></g></symbol>
+  </svg>
   <script src="script.js"></script>
 </body>
 </html>
