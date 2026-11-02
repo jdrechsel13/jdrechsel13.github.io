@@ -95,3 +95,10 @@ a:hover { text-decoration: underline; }
   .cv h2 { break-after: avoid; } .cv .item, .cv .publine { break-inside: avoid; }
   a { color: inherit; }
 }
+
+/* ---------- Conference photo gallery ---------- */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; border-radius: 12px; border: 1px solid var(--line); display: block; transition: transform .2s; }
+.gallery a:hover img { transform: translateY(-3px); }
+.gallery figcaption { text-align: center; color: var(--muted); font-size: .88rem; margin-top: .4rem; }
