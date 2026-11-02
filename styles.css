@@ -102,3 +102,4 @@ a:hover { text-decoration: underline; }
 .gallery img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; border-radius: 12px; border: 1px solid var(--line); display: block; transition: transform .2s; }
 .gallery a:hover img { transform: translateY(-3px); }
 .gallery figcaption { text-align: center; color: var(--muted); font-size: .88rem; margin-top: .4rem; }
+.gallery figure:nth-child(2) img { object-position: 15% 70%; }
